@@ -1,0 +1,179 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+  }
+  
+  /* Container principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  /* Título principal */
+  h1 {
+    text-align: center;
+    color: #172b4d;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulário */
+  form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      border: 1px solid #e1e4e8;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form input,
+  form textarea {
+    flex: 1;
+  }
+  
+  form button {
+    background-color: #0052cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0747a6;
+  }
+  
+  /* Lista de tarefas */
+  .task-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Cartões de tarefas */
+  .task-card {
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-card h3 {
+    color: #0052cc;
+    margin-bottom: 10px;
+  }
+  
+  .task-card p {
+    font-size: 14px;
+    color: #5e6c84;
+  }
+  
+  /* Assignee e Status */
+  .assignee, .task-status, .comments {
+    margin-top: 10px;
+  }
+  
+  .assignee strong, .task-status strong, .comments strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #172b4d;
+    font-weight: bold;
+  }
+  
+  /* Checkboxes */
+  .task-card input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Botão Excluir */
+  .delete-btn {
+    align-self: flex-end;
+    background-color: #ff1d1d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #971010;
+  }
+
+  /* Botão Comentar */
+  .add-comment-btn {
+    align-self: flex-end;
+    background-color: #07b44f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-comment-btn:hover {
+    background-color: #0b3a06;
+  }
+  
+  /* Comentários */
+  .comments {
+    margin-top: 20px;
+  }
+  
+  .comments .comment-list {
+    max-height: 100px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f5f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .comments textarea {
+    width: 100%;
+    resize: none;
+    height: 50px;
+  }
+  
+  .comments button {
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comments button:hover {
+    background-color: #00875a;
+  }
+  
